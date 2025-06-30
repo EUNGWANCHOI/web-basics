@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Pretendard Variable", sans-serif;
+      }
+
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      main {
+        width: 350px;
+        height: 175px;
+        background-color: #f9f9f9;
+        text-align: center;
+        padding-top: 50px;
+        border: #c6c6c8 1px solid;
+        border-radius: 8px;
+      }
+      fieldset {
+        background-color: #e3e3e3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <header>
+          <h2>Survey Form</h2>
+        </header>
+        <section>
+          <form action="">
+            <fieldset>
+              <legend>Enter personal information</legend>
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" required />
+              <label for="gender">gender</label>
+              <select id="gender" name="gender">
+                <option value="male">he/him</option>
+                <option value="female">she/her</option>
+                <option value="non-binary">they/them</option>
+              </select>
+              <label for="age">age</label>
+              <input
+                id="age"
+                name="age"
+                type="number"
+                placeholder="enter your age"
+              />
+            </fieldset>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
