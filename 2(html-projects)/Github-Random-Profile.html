@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub Identicon Generator</title>
+    <title>Document</title>
     <style>
       * {
         margin: 0;
@@ -61,7 +61,7 @@
         const seed =
           document.getElementById("seedInput").value ||
           Math.random().toString();
-        const size = 6;
+        const size = 5;
         const blockSize = canvas.width / size;
 
         const hash = await sha256(seed);
